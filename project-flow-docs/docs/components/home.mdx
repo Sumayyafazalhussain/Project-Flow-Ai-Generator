@@ -1,0 +1,74 @@
+src/pages/Home.jsx
+
+🎯 Purpose
+Main user interface for inputting website descriptions and displaying generated flowcharts.
+
+Component Overview
+The Home component serves as the primary entry point where users interact with the AI to generate flowcharts from natural language descriptions.
+
+State Management
+State	Type	Purpose
+input	string	Stores user's text description
+nodes	array	Stores flowchart nodes from AI
+edges	array	Stores flowchart connections
+loading	boolean	Tracks generation status
+error	string	Displays error messages
+Core Function
+handleGenerate()
+javascript
+- Validates user input (non-empty check)
+- Sets loading state and clears previous errors
+- Calls generateFlow() API function
+- Updates nodes/edges on success
+- Displays appropriate error messages on failure
+- Resets loading state
+User Interface Sections
+Section	Description
+Header	Application title and subtitle
+Input Card	Textarea for user description, Generate button, Error display
+Flowchart Display	Rendered only when nodes exist, shows interactive flowchart
+Example Prompts	Pre-built templates for E-commerce and Blog flows
+User Workflow
+text
+Enter Description → Click Generate → View Flowchart
+Error Handling
+Scenario	User Message
+Empty input	"Please enter a description"
+Invalid API key	"An error occurred. Please check your API key."
+Generation failed	"Could not generate flowchart. Please try again."
+Visual Design
+Gradient background (blue to purple)
+
+White cards with drop shadows
+
+Responsive grid layout
+
+Loading states on button during generation
+
+Dependencies
+FlowChart component - Renders interactive flowchart
+
+generateFlow function - API integration with Gemini AI
+
+Example Inputs
+E-commerce Flow:
+
+text
+Create a flowchart for an e-commerce website with: 
+Homepage, Product listing, Product details, Cart, Checkout
+Blog Flow:
+
+text
+Create a flowchart for a blog with:
+Homepage, Posts list, Single post, About page, Contact
+Summary
+The Home component provides a complete interface for:
+
+Capturing user input
+
+Generating AI-powered flowcharts
+
+Visualizing results interactively
+
+Handling errors gracefully
+

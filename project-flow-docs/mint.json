@@ -1,0 +1,90 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "AI Project Flow Generator",
+  "logo": {
+    "dark": "📊 AI Flow",
+    "light": "📊 AI Flow"
+  },
+  "favicon": "/favicon.svg",
+  "colors": {
+    "primary": "#2563eb",
+    "light": "#9333ea",
+    "dark": "#1e3a8a",
+    "background": {
+      "dark": "#0f172a"
+    }
+  },
+  "topbarLinks": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/Sumayyafazalhussain/Project-Flow-Ai-Generator.git"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Live Demo",
+    "url": "http://localhost:5173"
+  },
+  "tabs": [
+    {
+      "name": "Documentation",
+      "url": "docs"
+    },
+    {
+      "name": "API Reference",
+      "url": "api-reference"
+    }
+  ],
+  "anchors": [
+    {
+      "name": "GitHub",
+      "icon": "github",
+      "url": "https://github.com/Sumayyafazalhussain/Project-Flow-Ai-Generator.git"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Get Started",
+      "pages": [
+        "docs/introduction",
+        "docs/getting-started"
+      ]
+    },
+    {
+      "group": "Project Structure",
+      "pages": [
+        "docs/folder-structure",
+        "docs/configuration"
+      ]
+    },
+    {
+      "group": "Features",
+      "pages": [
+        "docs/features"
+      ]
+    },
+    {
+      "group": "Components",
+      "pages": [
+        "docs/components/flowchart",
+        "docs/components/home",
+        "docs/components/api"
+      ]
+    },
+    {
+      "group": "Development",
+      "pages": [
+        "docs/contributing",
+        "docs/deployment"
+      ]
+    },
+    {
+      "group": "API Reference",
+      "pages": [
+        "docs/api-reference"
+      ]
+    }
+  ],
+  "footerSocials": {
+    "github": "https://github.com/Sumayyafazalhussain/Project-Flow-Ai-Generator.git"
+  }
+}

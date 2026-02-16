@@ -1,0 +1,68 @@
+---
+title: "Features"
+description: "Key features of the AI Project Flow Generator"
+---
+
+# Features
+
+This document outlines the key features of the AI Project Flow Generator application.
+
+---
+
+## Core Features
+
+### 1. AI-Powered Generation
+- Converts natural language descriptions into flowcharts using Google Gemini AI
+- Automatically identifies pages, relationships, and hierarchy
+- Generates optimized node positions
+
+### 2. Interactive Flowchart
+- **Drag & Drop**: Move nodes anywhere on canvas
+- **Zoom Controls**: Zoom in/out with buttons or scroll wheel
+- **Pan Navigation**: Click and drag to move viewport
+- **MiniMap**: Overview of entire flowchart
+- **Background Grid**: Visual alignment reference
+
+### 3. Smart Positioning
+- X-coordinates: 0, 250, 500, 750 (4 columns)
+- Y-coordinates: 0, 100, 200, 300 (4 rows)
+- Left-to-right logical flow
+- Top-to-bottom hierarchy
+
+### 4. Real-time Processing
+- Instant generation with loading indicators
+- Automatic viewport fitting
+- Smooth transitions
+
+---
+
+## User Interface Features
+
+| Feature | Description |
+|---------|-------------|
+| **Large Text Area** | Comfortable space for detailed descriptions |
+| **Placeholder Text** | Guides users with examples |
+| **Loading States** | Visual feedback during generation |
+| **Error Messages** | Clear, actionable error descriptions |
+| **Empty State** | Guidance when no flowchart exists |
+
+### Example Prompts
+
+| Example | Description |
+|---------|-------------|
+| **E-commerce Flow** | Homepage → Products → Details → Cart → Checkout |
+| **Blog Platform** | Homepage → Posts → Single Post → Categories → About |
+
+---
+
+## Technical Implementation
+
+### API Integration
+```javascript
+// Simple error handling
+try {
+  const result = await generateContent(prompt);
+  // Process response
+} catch (error) {
+  return { nodes: [], edges: [] }; // Graceful fallback
+}

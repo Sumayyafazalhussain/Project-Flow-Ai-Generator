@@ -1,0 +1,35 @@
+---
+title: "Configuration"
+description: "Project configuration files documentation"
+---
+
+# Configuration Files
+
+This document covers all configuration files used in the AI Project Flow Generator project.
+
+---
+
+## Configuration Files Overview
+
+| File | Purpose |
+|------|---------|
+| `vite.config.js` | Vite build tool configuration |
+| `tailwind.config.js` | Tailwind CSS framework |
+| `postcss.config.js` | PostCSS processor |
+| `eslint.config.js` | ESLint code linting |
+| `.env` | Environment variables |
+| `package.json` | Project metadata and dependencies |
+
+---
+
+## Vite Configuration
+
+**File:** `vite.config.js`
+
+```javascript
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+export default defineConfig({
+  plugins: [react()],
+})

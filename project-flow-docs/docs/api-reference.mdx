@@ -1,0 +1,21 @@
+---
+title: "API Reference"
+description: "Complete API reference for the AI Project Flow Generator"
+---
+
+# API Reference
+
+This document provides a complete reference for all APIs used in the AI Project Flow Generator.
+
+## 📡 **Gemini AI Integration**
+
+The application uses Google's Generative AI (Gemini) to convert natural language descriptions into flowchart data.
+
+### **Base Configuration**
+
+```javascript
+import { GoogleGenerativeAI } from "@google/generative-ai";
+
+const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
+const genAI = new GoogleGenerativeAI(API_KEY);
+const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
